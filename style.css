@@ -1,0 +1,73 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(36, 37, 36);
+}
+
+.container {
+  color: white;
+  height: 85%;
+  /* width: 85%; */
+  width: 400px;
+  border: 5px solid rgb(220, 204, 204);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+@media (max-width: 500px) {
+  .container {
+    width: 85%;
+  }
+}
+
+.btn_container {
+  height: 60%;
+  width: 80%;
+  /* border: 2px solid greenyellow; */
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  justify-items: center;
+  align-items: center;
+}
+
+button {
+  height: 90%;
+  width: 90%;
+  border: 5px solid rgb(255, 255, 255);
+  border-radius: 20px;
+}
+
+.red {
+  background-color: #da275d;
+}
+.green {
+  background-color: #3cb438;
+}
+.orange {
+  background-color: #ee8420;
+}
+.blue {
+  background-color: #315ee4;
+}
+
+.flash {
+  background-color: rgb(255, 255, 255);
+}
+.userFlash {
+  background-color: rgb(0, 0, 0);
+}
+.gameOverFlash {
+  background-color: rgb(218, 73, 73);
+}
